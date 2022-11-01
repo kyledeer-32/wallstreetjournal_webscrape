@@ -8,7 +8,7 @@ import time
 import datetime as dt
 
 def save_financial_data(ticker, name, df):
-    save_path = "C:\\Users\\kyled\\OneDrive\\Kyle\\Coding\\coding_projects\\costco_strat_mgmt\\wscrape_files"
+    save_path = "" # input dir for date
     fname = f"{ticker}_{name}.xlsx"
     df.to_excel(f"{save_path}{fname}", index=False)
     print(f"{fname} saved to: {save_path}")
